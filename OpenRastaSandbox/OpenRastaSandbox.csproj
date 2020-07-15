@@ -5,7 +5,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="openrasta-hosting-aspnet" Version="2.5.2000" />
+    <PackageReference Include="Castle.Windsor" Version="5.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Owin" Version="3.1.6" />
+    <PackageReference Include="System.CodeDom" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="OpenRasta">
+      <HintPath>..\..\openrasta-core\src\OpenRasta.Hosting.AspNetCore\bin\Release\netstandard2.0\OpenRasta.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenRasta.Codecs.Newtonsoft.Json">
+      <HintPath>..\..\openrasta-core\src\OpenRasta.Codecs.Newtonsoft.Json\bin\Release\netstandard2.0\OpenRasta.Codecs.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenRasta.DI.Windsor">
+      <HintPath>..\..\openrasta-core\src\OpenRasta.DI.Windsor\bin\Release\netstandard2.0\OpenRasta.DI.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenRasta.Hosting.AspNetCore">
+      <HintPath>..\..\openrasta-core\src\OpenRasta.Hosting.AspNetCore\bin\Release\netstandard2.0\OpenRasta.Hosting.AspNetCore.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
